@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <style>
+        :root{
+            color-scheme: dark;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"/>
+    <script>
+        var boton = 0;
+        function añadir() {;
+            boton++;
+            document.getElementById("puntos").innerHTML = boton;
+        };
+        function quitar() {;
+            boton--;
+            document.getElementById("puntos").innerHTML = boton;
+        };
+    </script>
+    <title>
+        Reto
+    </title>
+</head>
+<body >
+    <div class="paper container">
+        <center>
+        <button class="paper button shadow shadow-hover" onclick="añadir()">
+            Añadir
+        </button>
+        <button class="paper button shadow shadow-hover" onclick="quitar()">
+            Quitar
+        </button>
+        <br>
+        Clicks: 
+        <p class="paper shadow shadow-hover" id="puntos">
+            0
+        </p> 
+        </center>
+    </div>
+</body>
+</html>
